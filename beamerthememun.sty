@@ -1,0 +1,24 @@
+% Beamer Theme for Memorial University
+% Base on the work found here: 
+%  http://tex.stackexchange.com/questions/146529/design-a-custom-beamer-theme-from-scratch
+
+
+\mode<presentation>
+
+% Requirement
+\RequirePackage{tikz}
+
+\definecolor{MunRed}{cmyk}{0.1,0.97,0.61,0.48}
+\definecolor{CoolGrey7}{cmyk}{0,0.01,0.06,0.35}
+\definecolor{PopOrange}{cmyk}{0,0.55,1,0.04}
+
+% Settings
+\useinnertheme{mun}
+\useoutertheme{mun}
+\usecolortheme{mun}
+
+% Remove navigation symbols and include rounded blocks with shadow
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{blocks}[rounded][shadow=true]  
+
+\mode<all>
