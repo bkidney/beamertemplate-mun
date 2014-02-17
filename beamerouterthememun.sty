@@ -9,12 +9,12 @@
   \useasboundingbox[fill=white](0,0) rectangle(\the\paperwidth,1.2);
   \fill[MunRed] (0,0) rectangle(2.95,1.2);
   \fill[black] (3.05,0) rectangle(\the\paperwidth,1.2);
-   \ifx\insertframesubtitle\@empty%
+  \ifx\insertframesubtitle\@empty%
       {\node[anchor=west, white,font=\large] at (3.2,0.61){\insertframetitle};}
       \else%
       {\node[anchor= west, white,font=\large] at (3.2,0.81){\insertframetitle};%
        \node[anchor= west, white,font=\small] at (3.2,0.41){\insertframesubtitle};}%
-      \fi
+  \fi
   \end{tikzpicture}
   \end{beamercolorbox}
 }
